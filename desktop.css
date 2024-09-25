@@ -1,0 +1,55 @@
+@media only screen and (min-width: 768px) {
+
+/* link hovering effext */
+    .nav-link::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 5px;
+        background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(129, 72%, 36%));
+        left: 0;
+        right: 0;
+        bottom: -15px;
+        border-radius: 4px;
+        opacity: 0;
+        width: inherit;
+
+        transition: opacity 500ms ease-in-out;
+
+    }
+
+    .nav-link:hover::before {
+        opacity: 1;
+        transition: opacity 500ms ease-in-out;
+
+    }
+
+.menu>h3 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 2rem;
+        z-index: 10 !important;
+        color: black;
+    }
+.abtT>h3 {
+    
+    color: green;
+}
+ /* the curve */
+ .menu::before {
+     content: "";
+     border-top-left-radius: 50% 100%;
+     border-top-right-radius: 50% 100%;
+     position: absolute;
+     top: -25%;
+     height: 27%;
+     width: 100%;
+     background-color: #f0f0f0;
+     z-index: 0;
+     background-image: radial-gradient(circle, #872929 1px, transparent 1px);
+     background-size: 20px 20px;
+ }
+
+
+
+}

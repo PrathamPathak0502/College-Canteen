@@ -1,0 +1,126 @@
+/* Styles for mobile screens */
+@media only screen and (max-width: 767px) {
+
+.About{
+    display: flex;
+    flex-direction: column;
+}
+
+           .img {
+               background-image: url("/durgacanteen1/images/4.jpg");
+               background-size:cover;
+              width: 65vw;
+               display: block;
+               margin: auto;
+               box-shadow: 4px 4px 10px;
+           }
+
+
+  .background-text::before {
+      content: "About us";
+      position: absolute;
+      top: 60%;
+      background-color: rgba(255, 255, 255, 0.5);
+      /* Adjust the opacity (last value) */
+      padding: 10px;
+      font-size: 5rem;
+      z-index: -1;
+      transform: translate(-50%, -50%) rotate(-90deg) ;
+      color: rgb(206, 202, 202);
+      /* Add padding to make text more readable */
+  }
+ .abtT>h4 {
+     width: 92vw;
+    
+     text-align: center;
+
+ }
+
+ /* menu */
+ .abtT>h3 {
+    display: block;
+        margin: auto;
+     visibility: hidden ;
+     opacity: 0;
+ }
+ .abtT>p{
+    display: block;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+ }
+ .About{
+    margin-bottom: 250px;}
+ /*Menuuu*/
+  /* bg letters for menu */
+  .background-textM::after {
+      content: "Menu";
+      position: absolute;
+      top: -2%;
+      left: 50%;
+
+      /* background-color: rgba(255, 255, 255, 0.5); */
+      /* Adjust the opacity (last value) */
+      padding: 10px;
+      font-size: 4rem;
+      z-index: 0;
+      transform: translate(-50%, -50%);
+
+      color: rgba(172, 168, 168, 0.768);
+      /* Add padding to make text more readable */
+  }
+  .menu>h3{
+    text-align: center;
+    padding: 30px;
+  }
+  .menu{
+    border-top-left-radius: 30% ;
+        border-top-right-radius: 30% ;
+        height:fit-content;
+        margin-bottom: 50px;
+        margin-top: 300px;
+  }
+
+  .card-body,.card{
+    width: 60vw;
+    height: 50vh;
+    display: block;
+    margin: auto;
+  }
+  .menu>.row {
+      padding-top: 50px;
+      height: 3vh;
+  }
+
+  .southimg {
+      width: 60vw;
+  }
+
+  .northimg {
+    width: 60vw;
+  }
+
+  .chineseimg {
+    width: 60vw;
+  }
+  
+ .menu{
+     display: flex;
+     flex-direction: column;
+     align-items: stretch;
+     align-content: stretch;
+     min-height: 200vh;
+ }
+
+ .card {
+     margin-bottom: 10px;
+     /* Adjust the margin between cards as needed */
+ }
+
+ /* Optional: If you want to remove spacing between cards */
+ .card+.card {
+     margin-top: 150px;
+ }
+  
+  
+}
